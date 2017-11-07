@@ -1,0 +1,23 @@
+{
+    "development": {
+      "username": "root",
+      "password": "Iwywbmmp.99",
+      "database": "burgertime2",
+      "host": "127.0.0.1",
+      "dialect": "mysql"
+    },
+    "test": {
+      "username": "root",
+      "password": "Iwywbmmp.99",
+      "database": "burgertime2",
+      "host": "127.0.0.1",
+      "dialect": "mysql"
+    },
+    "production": {
+      "username": "root",
+      "password": "Iwywbmmp.99",
+      "database": "burgertime2",
+      "host": "127.0.0.1",
+      "dialect": "mysql"
+    }
+  }

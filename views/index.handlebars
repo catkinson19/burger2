@@ -1,0 +1,65 @@
+<body>
+    <div class="container">
+        <div style="text-align: right; color: black;">
+            <h1>Burger App
+                <img src="/assets/img/logo.png" style="width: 50px; height 50px;">
+            </h1>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-lg-6 col-md-offset-3">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            <strong>Add a burger</strong>
+                        </h3>
+                    </div>
+                    <div class="row">
+                        <div class="panel-body">
+                            <form>
+                                <div class="col col-md-10">
+                                    <div class="form-group">
+                                        <input id="burgerFormInput" type="inputData" class="form-control" placeholder="burger name">
+                                    </div>
+                                </div>
+                                <div class="col col-md-2">
+                                    <button id="burgerFormSubmit" type="submit" style="float: right;" class="btn btn-danger btn-md" disabled="true">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            <strong>Available Burgers</strong>
+                        </h3>
+                        <br>
+                        <br> {{#each notEatenBurger}}
+                        <p>{{this.burger_name}}
+                            <button id={{this.id}} class="eatBurger" style="float: right;">Eat</button>
+                        </p>
+                        <hr> {{/each}}
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            <strong>Eaten Burgers</strong>
+                        </h3>
+                        <br>
+                        <br> {{#each eatenBurger}}
+                        <p>{{this.burger_name}}</p>
+                        <hr> {{/each}}
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
